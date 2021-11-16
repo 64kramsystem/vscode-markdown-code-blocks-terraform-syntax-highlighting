@@ -1,6 +1,6 @@
 {
-  "name": "markdown-fenced-codeblock-asm-injection",
-  "displayName": "Markdown fenced code block asm injection",
+  "name": "markdown-fenced-codeblock-asm-tf-injection",
+  "displayName": "Markdown fenced code block asm/tf injection",
   "description": "",
   "version": "0.0.1",
   "publisher": "64kramsystem",
@@ -21,6 +21,9 @@
     "languages": [
       {
         "id": "superasm-injection"
+      },
+      {
+        "id": "supertf-injection"
       }
     ],
     "grammars": [
@@ -33,6 +36,17 @@
         ],
         "embeddedLanguages": {
           "meta.embedded.block.asm": "asm"
+        }
+      },
+      {
+        "language": "supertf-injection",
+        "scopeName": "markdown.tf.codeblock",
+        "path": "./syntaxes/codeblock_tf.json",
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.tf": "tf"
         }
       }
     ]
