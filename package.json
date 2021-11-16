@@ -1,15 +1,15 @@
 {
-  "name": "markdown-fenced-codeblock-example-injection",
-  "displayName": "Markdown fenced code block example injection",
+  "name": "markdown-fenced-codeblock-asm-injection",
+  "displayName": "Markdown fenced code block asm injection",
   "description": "",
   "version": "0.0.1",
-  "publisher": "bierner",
+  "publisher": "64kramsystem",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example.git"
+    "url": "https://github.com/64kramsystem/vscode-fenced-code-block-grammar-injections.git"
   },
   "bugs": {
-    "url": "https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example/issues"
+    "url": "https://github.com/64kramsystem/vscode-fenced-code-block-grammar-injections/issues"
   },
   "engines": {
     "vscode": "^1.8.0"
@@ -20,19 +20,19 @@
   "contributes": {
     "languages": [
       {
-        "id": "superjs-injection"
+        "id": "superasm-injection"
       }
     ],
     "grammars": [
       {
-        "language": "superjs-injection",
-        "scopeName": "markdown.superjs.codeblock",
-        "path": "./syntaxes/codeblock.json",
+        "language": "superasm-injection",
+        "scopeName": "markdown.asm.codeblock",
+        "path": "./syntaxes/codeblock_asm.json",
         "injectTo": [
           "text.html.markdown"
         ],
         "embeddedLanguages": {
-          "meta.embedded.block.superjs": "javascript"
+          "meta.embedded.block.asm": "asm"
         }
       }
     ]
