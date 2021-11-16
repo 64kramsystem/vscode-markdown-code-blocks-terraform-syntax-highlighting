@@ -2,7 +2,7 @@
   "name": "markdown-fenced-codeblock-asm-tf-injection",
   "displayName": "Markdown fenced code block asm/tf injection",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "64kramsystem",
   "license": "MIT",
   "repository": {
