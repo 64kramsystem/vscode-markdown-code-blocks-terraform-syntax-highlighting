@@ -16,7 +16,7 @@ Code blocks like the following:
 
 will be highlighted, like:
 
-![Highlighted block rendering](https://github.com/64kramsystem/vscode-markdown-code-blocks-terraform-syntax-highlighting/blob/readme_images/hightlighted_block_rendering.png/test.png?raw=true)
+![Highlighted block rendering](https://github.com/64kramsystem/vscode-markdown-code-blocks-terraform-syntax-highlighting/blob/master/readme_images/hightlighted_block_rendering.png?raw=true)
 
 This work based on [Matt Bierner's work](https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example).
 
