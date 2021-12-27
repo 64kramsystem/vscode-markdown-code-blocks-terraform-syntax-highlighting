@@ -1,15 +1,15 @@
 {
-  "name": "markdown-fenced-codeblock-asm-tf-injection",
-  "displayName": "Markdown fenced code block asm/tf injection",
+  "name": "markdown-code-blocks-terraform-syntax-highlighting",
+  "displayName": "Markdown Code blocks Terraform Syntax highlighting",
   "description": "",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "publisher": "64kramsystem",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/64kramsystem/vscode-fenced-code-block-grammar-injections.git"
+    "url": "https://github.com/64kramsystem/vscode-markdown-code-blocks-terraform-syntax-highlighting.git"
   },
   "bugs": {
-    "url": "https://github.com/64kramsystem/vscode-fenced-code-block-grammar-injections/issues"
+    "url": "https://github.com/64kramsystem/vscode-markdown-code-blocks-terraform-syntax-highlighting/issues"
   },
   "engines": {
     "vscode": "^1.8.0"
@@ -20,24 +20,10 @@
   "contributes": {
     "languages": [
       {
-        "id": "superasm-injection"
-      },
-      {
         "id": "supertf-injection"
       }
     ],
     "grammars": [
-      {
-        "language": "superasm-injection",
-        "scopeName": "markdown.asm.codeblock",
-        "path": "./syntaxes/codeblock_asm.json",
-        "injectTo": [
-          "text.html.markdown"
-        ],
-        "embeddedLanguages": {
-          "meta.embedded.block.asm": "asm"
-        }
-      },
       {
         "language": "supertf-injection",
         "scopeName": "markdown.tf.codeblock",
