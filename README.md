@@ -2,6 +2,12 @@
 
 My ASM grammar injection, based on [Matt Bierner's work](https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example).
 
+## Setup
+
+This extension does not add the grammar; it only connects Markdown ASM code blocks to the existing ASM grammar.
+
+For this reason, it requires a preexisting extension that provides the grammar, for example, [nasm x86 syntax highlighting](https://marketplace.visualstudio.com/items?itemName=LucianIrsigler.nasm).
+
 ## Integration notes
 
 When integrating into an existing project, a new new language id entry needs to be added; if an existing one is recycled, the gramm will apply only to the new scope.
