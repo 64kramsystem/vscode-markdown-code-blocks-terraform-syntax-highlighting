@@ -1,15 +1,15 @@
 {
-  "name": "markdown-fenced-codeblock-asm-tf-injection",
-  "displayName": "Markdown fenced code block asm/tf injection",
+  "name": "markdown-code-blocks-asm-syntax-highlighting",
+  "displayName": "Markdown Code blocks Assembly Syntax highlighting",
   "description": "",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "publisher": "64kramsystem",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/64kramsystem/vscode-fenced-code-block-grammar-injections.git"
+    "url": "https://github.com/64kramsystem/vscode-markdown-code-blocks-asm-syntax-highlighting.git"
   },
   "bugs": {
-    "url": "https://github.com/64kramsystem/vscode-fenced-code-block-grammar-injections/issues"
+    "url": "https://github.com/64kramsystem/vscode-markdown-code-blocks-asm-syntax-highlighting/issues"
   },
   "engines": {
     "vscode": "^1.8.0"
@@ -21,9 +21,6 @@
     "languages": [
       {
         "id": "superasm-injection"
-      },
-      {
-        "id": "supertf-injection"
       }
     ],
     "grammars": [
@@ -36,17 +33,6 @@
         ],
         "embeddedLanguages": {
           "meta.embedded.block.asm": "asm"
-        }
-      },
-      {
-        "language": "supertf-injection",
-        "scopeName": "markdown.tf.codeblock",
-        "path": "./syntaxes/codeblock_tf.json",
-        "injectTo": [
-          "text.html.markdown"
-        ],
-        "embeddedLanguages": {
-          "meta.embedded.block.tf": "tf"
         }
       }
     ]
