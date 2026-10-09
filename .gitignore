@@ -1,6 +1,7 @@
 node_modules/
 *.log
 *.vsix
+dist/
 
 # Shared local agent instructions
 /AGENTS.development.md

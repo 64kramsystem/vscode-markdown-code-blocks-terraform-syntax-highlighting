@@ -7,3 +7,4 @@
 !language-configuration.json
 !syntaxes/**
 !licenses/**
+!dist/**

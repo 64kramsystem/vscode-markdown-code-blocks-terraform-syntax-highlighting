@@ -1,6 +1,6 @@
 # Markdown Terraform Code Block Highlighting
 
-Highlights `tf` and `terraform` fenced code blocks in the VS Code Markdown editor. Fence names are case-insensitive; backticks and tildes are supported, including blocks in lists and blockquotes.
+Highlights `tf` and `terraform` fenced code blocks in the VS Code Markdown editor and built-in Markdown Preview. Fence names are case-insensitive; backticks and tildes are supported, including blocks in lists and blockquotes.
 
 ````markdown
 ```tf
@@ -10,13 +10,13 @@ resource "aws_instance" "example" {
 ```
 ````
 
-The HashiCorp Terraform syntax grammar is bundled. No additional extensions, runtime packages, or extension JavaScript are required. Requires VS Code 1.141 or later.
+The HashiCorp Terraform syntax grammar is bundled. No additional extensions are required. Preview highlighting uses bundled VS Code TextMate and Oniguruma components; nothing is downloaded at runtime. Requires desktop VS Code 1.141 or later; vscode.dev and github.dev are not supported.
 
-This extension provides editor syntax highlighting, not Markdown preview rendering or language-server features. It does not associate itself with standalone `.tf` files.
+This extension provides syntax highlighting in the editor and preview, without language-server features. It does not associate itself with standalone `.tf` files.
 
 ## Development
 
-Run `npm ci` and `npm test` to test highlighting and Markdown boundaries with VS Code's TextMate engine. Test dependencies are excluded from the extension package.
+Run `npm ci` and `npm test` to test editor highlighting and rendered preview HTML. Run `npm run build` before launching the extension with F5. Development dependencies are excluded from the extension package.
 
 ## Credits
 

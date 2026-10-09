@@ -11,3 +11,7 @@ To update the grammar, copy that file from a reviewed upstream release, apply th
 ## Test fixture
 
 `test/fixtures/markdown.tmLanguage.json` is copied unchanged from [VS Code 1.141.0](https://github.com/microsoft/vscode/blob/1.141.0/extensions/markdown-basics/syntaxes/markdown.tmLanguage.json), under the MIT license in `test/fixtures/LICENSE.txt`. Test fixtures are excluded from the extension package.
+
+## Preview tokenizer
+
+The preview bundles [vscode-textmate 9.3.2](https://github.com/microsoft/vscode-textmate) and [vscode-oniguruma 2.0.1](https://github.com/microsoft/vscode-oniguruma), both MIT-licensed. Their licenses and Oniguruma’s bundled BSD license notice are preserved in `licenses/textmate-MIT.txt`, `licenses/vscode-oniguruma-MIT.txt`, and `licenses/oniguruma-NOTICES.txt`.
