@@ -1,28 +1,23 @@
-# VSCode Markdown Code blocks Terraform Syntax highlighting
+# Markdown Terraform Code Block Highlighting
 
-This extension adds Terraform syntax highlighting to Markdown fenced code blocks.
+Highlights `tf` and `terraform` fenced code blocks in the VS Code Markdown editor. Fence names are case-insensitive; backticks and tildes are supported, including blocks in lists and blockquotes.
 
-Code blocks like the following:
+````markdown
+```tf
+resource "aws_instance" "example" {
+  ami = var.ami_id
+}
+```
+````
 
-    ```tf
-    terraform {
-      required_version = "1.1.2"
-    }
+The HashiCorp Terraform syntax grammar is bundled. No additional extensions, runtime packages, or extension JavaScript are required. Requires VS Code 1.141 or later.
 
-    provider "aws" {
-      region = var.aws_default_region
-    }
-    ```
+This extension provides editor syntax highlighting, not Markdown preview rendering or language-server features. It does not associate itself with standalone `.tf` files.
 
-will be highlighted, like:
+## Development
 
-![Highlighted block rendering](https://github.com/64kramsystem/vscode-markdown-code-blocks-terraform-syntax-highlighting/blob/master/readme_images/hightlighted_block_rendering.png?raw=true)
+Run `npm ci` and `npm test` to test highlighting and Markdown boundaries with VS Code's TextMate engine. Test dependencies are excluded from the extension package.
 
-This work based on [Matt Bierner's work](https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example).
+## Credits
 
-## Setup
-
-This extension does not add the grammar; it only connects Markdown ASM code blocks to the existing ASM grammar.
-
-For this reason, it requires a preexisting extension that provides the grammar, for example, [Terraform](https://marketplace.visualstudio.com/items?itemName=4ops.terraform).
-
+Based on [Matt Bierner's Markdown grammar injection example](https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example). Bundled grammar sources and licenses are recorded in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

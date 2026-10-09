@@ -1,10 +1,10 @@
 {
   "name": "markdown-code-blocks-terraform-syntax-highlighting",
-  "displayName": "Markdown Code blocks Terraform Syntax highlighting",
-  "description": "",
-  "version": "0.0.2",
+  "displayName": "Markdown Terraform Code Block Highlighting",
+  "description": "Highlights Terraform code blocks in Markdown with a bundled Terraform grammar. No additional extensions required.",
+  "version": "0.1.0",
   "publisher": "64kramsystem",
-  "license": "MIT",
+  "license": "(MIT AND MPL-2.0)",
   "repository": {
     "url": "https://github.com/64kramsystem/vscode-markdown-code-blocks-terraform-syntax-highlighting.git"
   },
@@ -12,30 +12,48 @@
     "url": "https://github.com/64kramsystem/vscode-markdown-code-blocks-terraform-syntax-highlighting/issues"
   },
   "engines": {
-    "vscode": "^1.8.0"
+    "vscode": "^1.141.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages"
   ],
   "contributes": {
     "languages": [
       {
-        "id": "supertf-injection"
+        "id": "markdown-code-blocks-terraform",
+        "aliases": [
+          "Terraform (Markdown code blocks)"
+        ],
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "supertf-injection",
         "scopeName": "markdown.tf.codeblock",
         "path": "./syntaxes/codeblock_tf.json",
         "injectTo": [
           "text.html.markdown"
         ],
         "embeddedLanguages": {
-          "meta.embedded.block.tf": "tf"
+          "meta.embedded.block.markdown-code-blocks.terraform": "markdown-code-blocks-terraform"
         }
+      },
+      {
+        "language": "markdown-code-blocks-terraform",
+        "scopeName": "source.markdown-code-blocks.terraform",
+        "path": "./syntaxes/terraform.tmGrammar.json"
       }
     ]
   },
-  "dependencies": {}
+  "keywords": [
+    "markdown",
+    "terraform"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "vscode-oniguruma": "2.0.1",
+    "vscode-textmate": "9.3.2"
+  }
 }
