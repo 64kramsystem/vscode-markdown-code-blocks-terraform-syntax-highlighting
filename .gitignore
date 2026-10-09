@@ -1,3 +1,7 @@
 node_modules/
 *.log
 *.vsix
+
+# Shared local agent instructions
+/AGENTS.development.md
+/AGENTS.git.md
